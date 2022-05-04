@@ -1,0 +1,15 @@
+div{
+    display: flex;
+    justify-content: space-evenly;
+}
+div span{
+    display: inline-block;
+
+    color: gray;
+    background-color: lightgray;
+    border-radius: 2rem;
+    padding: 0.6rem;
+}
+div span:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+<div *ngIf="tags">
+    <span>
+        <div (click)="allFoodTag()"> All Foods</div>
+    </span>
+   <span *ngFor="let tag of tags | keyvalue">
+       <div  (click)="tagClick(tag)">{{tag.key+"("+tag.value+")"}}</div>
+    </span>
+</div>
+<div *ngIf="foodPageTags">
+    <span *ngFor="let tag of foodPageTags">
+        <div  (click)="tagClick(tag)">{{tag}}</div>
+     </span>
+</div>

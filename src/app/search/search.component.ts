@@ -16,8 +16,6 @@ export class SearchComponent implements OnInit {
   }
  
   searchFun(){
-    console.log("INNNNN");
-    
    this.router.navigate(['/search',this.searchText])
   }
   // keyFun(val){

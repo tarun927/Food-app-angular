@@ -6,8 +6,11 @@ import { Foods } from 'src/app/shared/models/food';
 })
 export class FoodService {
 
-  constructor() { }
 
+  constructor() { }
+getFoodById(rid:string):Foods{
+  return this.getAll().find(ele=>ele.id==rid)
+}
   getAll():Foods[]{
     return[
       {

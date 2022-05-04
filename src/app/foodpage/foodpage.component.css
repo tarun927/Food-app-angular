@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:3rem;
+}
+
+.container > *{  /*or:  img, .details */
+    min-width: 25rem;
+    max-width: 40rem;
+}
+img{
+    border-radius: 3rem;
+    flex:1 0;
+    object-fit: cover;
+    height: 30rem;
+    margin: 1rem;
+}
+.details{
+    width: 100%;
+    padding: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.details .header{
+    display: flex;
+    justify-content: space-between;
+}
+.favorite{
+    font-size:xx-large;
+   color:red
+}
+.not{
+   color: lightgray;
+}
+.details .name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.origins{
+    margin-top: 0.3rem;
+}
+.origins span{
+    background-color: maroon;
+    color:white;
+    padding: 0.2rem;
+    margin-right: 1rem;
+    border-radius: 0.2rem;
+}
+.details .tag{
+    display: flex;
+    justify-content: start;
+    margin:1rem 1rem 1rem 0;
+}
+.price{
+    color: rgb(44, 16, 206);
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.details .price::before{
+    content: "Price : ";
+    color: gray;
+}
+.details button{
+    color: white;
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: rgb(243, 59, 59);
+    padding: 1rem 0;
+}
+.details button:hover{
+    background-color: rgb(240, 106, 106);
+    cursor: pointer;
+}
